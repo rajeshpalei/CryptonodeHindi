@@ -1,13 +1,18 @@
 #!/bin/bash
 
+# Define color variables
+GREEN="\033[0;32m"     # Green
+YELLOW="\033[1;33m"    # Bright Yellow
+NC="\033[0m"           # No Color
+
 # Display social details and channel information
 echo "==================================="
-echo "           CryptonodeHindi       "
+echo -e "${GREEN}           CryptonodeHindi       ${NC}"
 echo "==================================="
-echo "Telegram: https://t.me/cryptonodehindi"
-echo "Twitter: @CryptonodeHindi"
-echo "YouTube: https://www.youtube.com/@CyptonodeHindi"
-echo "Medium: https://medium.com/@cyptonodehindi"
+echo -e "${YELLOW}Telegram: https://t.me/cryptonodehindi${NC}"
+echo -e "${YELLOW}Twitter: @CryptonodeHindi${NC}"
+echo -e "${YELLOW}YouTube: https://www.youtube.com/@CyptonodeHindi${NC}"
+echo -e "${YELLOW}Medium: https://medium.com/@cyptonodehindi${NC}"
 echo "==================================="
 
 # Ask for user confirmation
@@ -42,11 +47,10 @@ echo "Blockmesh node installation is done."
 
 # Thank you message
 echo "==================================="
-echo "    Thanks for using this script!"
+echo -e "${GREEN}    Thanks for using this script!${NC}"
 echo "==================================="
-echo "Please follow my social links:"
-echo "Twitter: @CryptonodeHindi"
-echo "YouTube: https://www.youtube.com/@CyptonodeHindi"
-echo "Medium: https://medium.com/@cyptonodehindi"
-echo "Join our Telegram for any support: https://t.me/cryptonodehindi"
+echo -e "${YELLOW}Twitter: @CryptonodeHindi${NC}"
+echo -e "${YELLOW}YouTube: https://www.youtube.com/@CyptonodeHindi${NC}"
+echo -e "${YELLOW}Medium: https://medium.com/@cyptonodehindi${NC}"
+echo -e "${YELLOW}Join our Telegram for any support: https://t.me/cryptonodehindi${NC}"
 echo "======================================================================"
