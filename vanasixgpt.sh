@@ -54,6 +54,29 @@ fi
 
 # Install SixGPT
 mkdir -p sixgpt
+cd sixgpt
+
+# Prompt for the private key
+echo -e "${YELLOW}Enter your EVM private key: ${NC}"
+read PRIVATE_KEY
+
+# Export the environment variables
+export VANA_PRIVATE_KEY="$PRIVATE_KEY"
+export VANA_NETWORK="moksha"
+
+# Display success messages
+echo -e "${YELLOW}\nPrivate key has been configured.${NC}"
+echo -e "${YELLOW}VANA_NETWORK set to $VANA_NETWORK.${NC}"
+sleep 10
+
+
+# ask to enter the value
+echo -e "${YELLOW}In the next step, you have to put the docker-compose${NC}"
+sleep 10
+nano docker-compose.yml
+
+#final step
+docker compose up -d
 
 # Thank you message
 echo "==================================="
