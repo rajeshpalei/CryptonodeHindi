@@ -67,12 +67,12 @@ export VANA_NETWORK="moksha"
 # Display success messages
 echo -e "${YELLOW}\nPrivate key has been configured.${NC}"
 echo -e "${YELLOW}VANA_NETWORK set to $VANA_NETWORK.${NC}"
-sleep 10
+sleep 3
 
 
 # ask to enter the value
 echo -e "${YELLOW}In the next step, you have to put the docker-compose${NC}"
-sleep 10
+sleep 4
 nano docker-compose.yml
 
 #final step
