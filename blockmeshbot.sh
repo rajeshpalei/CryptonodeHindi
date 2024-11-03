@@ -32,7 +32,7 @@ fi
 
 # Download Blockmesh CLI
 echo "Downloading Blockmesh CLI..."
-wget https://github.com/block-mesh/block-mesh-monorepo/releases/download/v0.0.307/blockmesh-cli-x86_64-unknown-linux-gnu.tar.gz
+wget https://github.com/block-mesh/block-mesh-monorepo/releases/download/v0.0.327/blockmesh-cli-x86_64-unknown-linux-gnu.tar.gz
 
 # Extracting Blockmesh CLI archive
 echo "Extracting Blockmesh CLI..."
