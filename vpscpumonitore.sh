@@ -15,6 +15,8 @@ echo -e "${YELLOW}YouTube: https://www.youtube.com/@CryptonodesHindi${NC}"
 echo -e "${YELLOW}Medium: https://medium.com/@cryptonodehindi${NC}"
 echo "==================================="
 
+# Download the script
+wget -q https://raw.githubusercontent.com/rajeshpalei/CryptonodeHindi/refs/heads/main/vpshealth.sh && chmod +x vpshealth.sh
 
 # Install CryptonodeHindi
 if ! command -v glances &> /dev/null; then
