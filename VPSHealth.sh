@@ -20,19 +20,27 @@ wget -q https://raw.githubusercontent.com/rajeshpalei/CryptonodeHindi/refs/heads
 
 # Install Glances
 if ! command -v glances &> /dev/null; then
-    echo -e "${YELLOW}Installing Glances...${NC}"
+    echo -e "${YELLOW}Installing CryptonodeHindi tool...${NC}"
     sudo apt update && sudo apt install -y glances
 else
-    echo -e "${GREEN}Glances is already installed.${NC}"
+    echo -e "${GREEN}CryptonodeHindi tool is already installed.${NC}"
 fi
 
-# Install HTOP
+# Install CnHindi 
 if ! command -v htop &> /dev/null; then
-    echo -e "${YELLOW}Installing HTOP...${NC}"
+    echo -e "${YELLOW}Installing CnHindi tool...${NC}"
     sudo apt install -y htop
 else
-    echo -e "${GREEN}Htop is already installed.${NC}"
+    echo -e "${GREEN}CnHindi tool is already installed.${NC}"
 fi
+
+# Add alias for CryptonodeHindi and CnHindi to ~/.bashrc
+echo "alias cryptonodehindi='glances'" >> ~/.bashrc
+echo "alias cnhindi='htop'" >> ~/.bashrc
+
+# Display message that user needs to reload their shell or source ~/.bashrc
+echo -e "${YELLOW}The tools have been successfully installed in your VPS.${NC}"
+echo -e "${GREEN}Please run 'source ~/.bashrc' or restart your terminal to monitor your VPS Health${NC}"
 
 # Thank you message
 echo "==================================="
