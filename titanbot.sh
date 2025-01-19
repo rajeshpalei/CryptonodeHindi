@@ -18,7 +18,7 @@ echo "==================================="
 
 # Update package lists and upgrade installed packages
 echo -e "${YELLOW}Updating and upgrading system packages...${NC}"
-sudo apt update -y && sudo apt upgrade -y
+sudo apt update -y
 
 # Check if Docker is already installed
 if command -v docker &> /dev/null; then
